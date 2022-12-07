@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="users">
+        <input type="text" placeholder="nom" id="nom">
+        <input type="text" placeholder="prenom" id="prenom">
+        <input type="number" placeholder="age" id="age" min="1" max="99">
+        <span><button id="btnUser" onclick="addUsers()">Valider</button></span>
+        <button id="removeAll" onclick="removeAll()">Supprimer tout</button>
+        <button id="sort" onclick="sort()">Sort by name</button>
+    </div>
+    <table id="tabHeader">
+        <tr>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Age</th>
+        </tr>
+    </table>
+    <table id="userTable">
+    </table>
+    <ol id="list">
+
+    </ol>
+    <script src="js.js"></script>
+</body>
+</html>
